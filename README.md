@@ -43,12 +43,36 @@ visualizations of generated outputs.
 ![VAE latent dim 64 (epoch 0/49)](assets/Screenshot%20(548).png)
 ![GAN latent dim 64 (epoch 0/49)](assets/Screenshot%20(549).png)
 
+## Requirements
+- Python 3.x
+- `tensorflow` / `tf_keras`
+- `numpy`, `matplotlib`, `tqdm`
+- `opencv-python`, `scikit-learn`, `scipy`
+
+Install:
+
+```
+pip install tensorflow tf_keras numpy matplotlib tqdm opencv-python scikit-learn scipy
+```
+
 ## Run
-Install the required Python packages (e.g., TensorFlow/Keras, NumPy, Matplotlib), then run:
+These files are exported from notebooks and include cell markers and `%pip` lines. The smoothest way is
+to open them in Jupyter/Colab. If you run as plain Python, comment out the `%pip` lines first.
+
+Generative models:
 
 ```
 python VAE_filter64_latent32.py
+python VAE_filter64_latent64.py
+python VAE_filter64_latent128.py
+python GAN_filtter128_latent64.py
+python GAN_filtter128_latent128.py
 python GAN_filter128_latent256.py
+```
+
+Sequence models:
+
+```
 python task2_txt2txtimg2txt.py
 python A2_RNNs_text2image.py
 ```
