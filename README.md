@@ -1,8 +1,8 @@
 # Generative Models & Sequence Modeling
 
-This project explores generative modeling for images and sequence-to-sequence learning for arithmetic
-tasks. It covers VAE/GAN image generation on CelebA and recurrent encoder–decoder models that map
-between text, image sequences, and generated digit images.
+This project explores image generation with VAEs/GANs and sequence-to-sequence learning for arithmetic
+queries. It includes text↔image mappings built with recurrent encoder–decoder models and qualitative
+visualizations of generated outputs.
 
 ## What’s inside
 - `VAE_filter64_latent32.py` / `VAE_filter64_latent64.py` / `VAE_filter64_latent128.py`:
@@ -11,12 +11,19 @@ between text, image sequences, and generated digit images.
   GAN experiments with different latent sizes.
 - `A2_RNNs_text2image.py`: text-to-image sequence model for MNIST-style digits.
 - `task2_txt2txtimg2txt.py`: text-to-text and image-to-text sequence models.
-- `IDL_Assignment_2 (1) (1).pdf`: project report.
 
 ## Datasets
 - CelebA (image generation with VAE/GAN)
 - MNIST (digit images for sequence tasks)
 - Synthetic arithmetic expressions (text inputs/outputs)
+
+## Tasks covered
+- Generative models: train VAE and GAN on a custom image dataset and generate samples.
+- Latent interpolation: create smooth transitions between two random latent points.
+- Text-to-text: predict arithmetic results from text expressions with varying train/test splits.
+- Image-to-text: read digit images + operator and output the result in text.
+- Text-to-image: generate MNIST-style digit images for the answer sequence.
+- Model variations: explore changes in latent size and recurrent depth.
 
 ## Results (high level)
 - VAE: smaller latent sizes produced sharper faces, while larger sizes reduced loss but blurred outputs.
@@ -24,11 +31,6 @@ between text, image sequences, and generated digit images.
 - Text-to-text: strong generalization with high accuracy even with limited training data.
 - Image-to-text: lower accuracy than text-to-text due to higher input dimensionality.
 - Text-to-image: outputs were visually plausible but lacked crisp digit structure.
-
-## Sequence modeling tasks
-- Text-to-text: predict arithmetic results from text expressions.
-- Image-to-text: read digit images + operator and output the result in text.
-- Text-to-image: generate MNIST-style digit images for the answer sequence.
 
 ## Report cutouts (results graphs)
 ![VAE latent dim 64 (epoch 0/49)](assets/Screenshot%20(548).png)
