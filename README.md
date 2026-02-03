@@ -1,5 +1,10 @@
 # Generative Models & Sequence Modeling
 
+## Report preview
+![Report cutout 1](assets/Screenshot%20(550).png)
+![Report cutout 2](assets/Screenshot%20(551).png)
+![Report cutout 3](assets/Screenshot%20(552).png)
+
 This project explores image generation with VAEs/GANs and sequence-to-sequence learning for arithmetic
 queries. It includes text↔image mappings built with recurrent encoder–decoder models and qualitative
 visualizations of generated outputs.
