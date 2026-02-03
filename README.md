@@ -27,8 +27,8 @@ between text, image sequences, and generated digit images.
 ## Report cutouts (results graphs)
 Add the cropped result-graph images from your report in `assets/` and update the links below.
 
-![VAE/GAN results](assets/results-generative.png)
-![Seq2Seq results](assets/results-sequence.png)
+![VAE latent dim 64 (epoch 0/49)](assets/Screenshot%20(548).png)
+![GAN latent dim 64 (epoch 0/49)](assets/Screenshot%20(549).png)
 
 ## Run
 Install the required Python packages (e.g., TensorFlow/Keras, NumPy, Matplotlib), then run:
